@@ -1,0 +1,91 @@
+{
+  "sidebar-primary": {
+    "search-2": {
+      "title": ""
+    },
+    "la-recent-posts-2": {
+      "title": "",
+      "number": 4,
+      "show_date": true,
+      "classes": ""
+    },
+    "categories-3": {
+      "title": "",
+      "count": 1,
+      "hierarchical": 0,
+      "dropdown": 0,
+      "classes": ""
+    },
+    "archives-3": {
+      "title": "",
+      "count": 0,
+      "dropdown": 1,
+      "classes": ""
+    },
+    "tag_cloud-2": {
+      "title": "",
+      "count": 0,
+      "taxonomy": "post_tag",
+      "classes": ""
+    },
+    "text-2": {
+      "title": "",
+      "text": "[elementor-template id=\"2682\"]",
+      "filter": true,
+      "visual": true,
+      "classes": ""
+    },
+    "text-3": {
+      "title": "",
+      "text": "[elementor-template id=\"2692\"]",
+      "filter": true,
+      "visual": true,
+      "classes": ""
+    }
+  },
+  "raz_widget_area_1": {
+    "woocommerce_product_categories-2": {
+      "title": "by categories",
+      "orderby": "name",
+      "dropdown": 0,
+      "count": 1,
+      "hierarchical": 0,
+      "show_children_only": 0,
+      "hide_empty": 0,
+      "max_depth": "",
+      "classes": ""
+    },
+    "woocommerce_price_filter-2": {
+      "title": "by price",
+      "classes": ""
+    },
+    "woocommerce_layered_nav-2": {
+      "title": "Size",
+      "attribute": "size",
+      "display_type": "list",
+      "query_type": "and",
+      "classes": ""
+    },
+    "woocommerce_layered_nav-3": {
+      "title": "Color",
+      "attribute": "color",
+      "display_type": "swatches",
+      "query_type": "and",
+      "classes": ""
+    },
+    "woocommerce_layered_nav-4": {
+      "title": "Brands",
+      "attribute": "brands",
+      "display_type": "list",
+      "query_type": "and",
+      "classes": ""
+    },
+    "text-4": {
+      "title": "",
+      "text": "[elementor-template id=\"3517\"]",
+      "filter": true,
+      "visual": true,
+      "classes": ""
+    }
+  }
+}

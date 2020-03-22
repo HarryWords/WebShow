@@ -1,0 +1,75 @@
+.lastudio-slick-dots {
+  li {
+    span {
+      background-color: #E7E7E7;
+    }
+    &.slick-active,
+    &:hover {
+      span{
+        @extend %background-color-primary;
+      }
+    }
+  }
+}
+
+.lastudio-carousel {
+  .lastudio-carousel__item {
+    &-title {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .lastudio-arrow {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    margin-top: -18px;
+    color: #fff;
+    &:before {
+      font-size: 23px;
+    }
+    &.prev-arrow {
+      left: 20px;
+    }
+    &.next-arrow {
+      right: 20px;
+    }
+  }
+}
+
+.carousel__shadow {
+  .slick-slide {
+    &:hover {
+      .lastudio-carousel__item-inner {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.10);
+      }
+    }
+  }
+}
+
+.logo-partners .lastudio-carousel__item {
+  filter: grayscale(100);
+  -webkit-filter: grayscale(100);
+  opacity: 0.7;
+  @include single-transition();
+  &:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+  }
+}
+
+.lastudio-carousel__item-inner{
+  .lastudio-carousel__image{
+    overflow: hidden;
+  }
+  .lastudio-carousel__image img{
+    transition: opacity 0.35s, transform 0.35s;
+  }
+  &:hover{
+    .lastudio-carousel__image{
+      img{
+        @include scale(1.2);
+      }
+    }
+  }
+}

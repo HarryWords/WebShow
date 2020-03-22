@@ -1,0 +1,48 @@
+@media (max-width: 1500px) {
+
+}
+
+@media (max-width: 1440px){
+  .lahb-nav-wrap.has-parent-arrow > ul > li.menu-item-has-children > a:before,
+  .lahb-nav-wrap.has-parent-arrow > ul > li.mega > a:before{
+    font-size: 14px;
+  }
+  .playout-grid .lastudio-portfolio__icons a{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .playout-grid.preset-type-1 .lastudio-portfolio__item .lastudio-portfolio__icons {
+    top: 75%;
+    transform: translateY(-75%);
+  }
+
+}
+@media (max-width: 1400px){
+  .lastudio-portfolio.preset-list-type-2 .lastudio-carousel .lastudio-arrow.prev-arrow{
+    left: 58% !important;
+  }
+
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+  .cart-flyout .cart_list{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .product_list_widget li{
+    margin-bottom: 30px;
+    + li{
+      margin-top: 0;
+    }
+  }
+}
+
+/* Large devices (large desktops, 1200px only) */
+@media (min-width: $screen-lg-min) and (max-width: 1439px) {
+
+}

@@ -1,0 +1,180 @@
+@media(min-width: 992px){
+  .body-loaded .lahb-header-vertical-no-toggle .lahb-wrap-sticky-height {
+      display: none;
+  }
+  .header-sticky-type-auto .lahb-header-vertical-no-toggle .lahbhinner {
+      transform: none;
+      -webkit-transform: none;
+  }
+}
+
+/* Medium devices (tablet, less than 991px) */
+@media (max-width: $screen-sm-max ){
+
+  .header-wishlist-count-icon,
+  .lahb-header-woo-cart-toggle .la-cart-modal-icon .header-cart-count-icon {
+    width: 20px;
+    height: 20px;
+    top: -1.1em;
+    line-height: 20px;
+  }
+  .header-wishlist-count-icon {
+    top: -1.5em;
+  }
+  .header-toggle-02{
+    .la-hamburger-icon-trigger{
+      border: none !important;
+      &:hover{
+        color: #fff !important;
+      }
+    }
+    .lahb-element  > i,
+    .lahb-element  > a > i,
+    .lahb-element  > a > i:before{
+      font-size: 18px !important;
+      padding: 0 2px;
+    }
+  }
+  .hesperiden .tp-bullet {
+    width: 12px !important;
+    height: 12px !important;
+  }
+  .woocommerce-Reviews .commentlist li{
+    padding: 0;
+  }
+  .lastudio-scroll-navigation{
+    display: none;
+  }
+  .lastudio-tabs > .lastudio-tabs__control-wrapper {
+    align-self: center;
+    justify-content: center;
+  }
+  body.blog .site-main{
+    padding-top: 30px !important;
+  }
+  .la-advanced-product-filters .sidebar-inner{
+    padding: 30px  30px 0;
+  }
+  .woocommerce #customer_details {
+    width: 55%;
+  }
+  .woocommerce #order_review {
+    width: 45%;
+    padding: 80px 20px 10px;
+  }
+  .woocommerce #order_review_heading {
+    width: 45%;
+    padding: 30px 0 0 20px;
+  }
+
+  .main--loop-container .la-pagination{
+    margin-top: 30px;
+  }
+
+  .widget_recent_entries .pr-item{
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 5px;
+  }
+  .comments-container .comments-title h3, .comment-reply-title{
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  #page.lahb-header-vertical-no-toggle {
+      padding-left: 0;
+  }
+  .lastudio-posts .entry-title{
+    font-size: 24px;
+  }
+
+  body.single-product .la-p-single-1 .la-single-product-page .product--summary .single-price-wrapper,
+  .enable-main-fullwidth.body-col-1c .la-p-single-1 .la-single-product-page .product--summary .single-price-wrapper{
+      text-align: left;
+  }
+  .lastudio-portfolio.preset-list-type-2 .lastudio-portfolio__inner{
+    padding-top: 10px;
+  }
+  .lastudio-portfolio.preset-list-type-2 .lastudio-portfolio__title,
+  .lastudio-portfolio.preset-list-type-2 .lastudio-portfolio__desc{
+    width: 100%;
+  }
+  .lastudio-portfolio.preset-list-type-2 .lastudio-portfolio__list > .slick-list {
+    padding-right: 0px;
+  }
+  .lastudio-portfolio.preset-list-type-2 .lastudio-carousel .lastudio-arrow.next-arrow{
+      right: 10px !important;
+  }
+  .lastudio-portfolio.preset-list-type-2 .lastudio-carousel .lastudio-arrow.prev-arrow{
+      left: 10px !important;
+  }
+
+
+  .lastudio-posts.preset-type-list-1 .blog__item {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 800px ){
+
+  .woocommerce.add_to_cart_inline .amount {
+    margin: 15px 0;
+  }
+
+
+  .products-list{
+    &:not(.products-list-mini){
+      .product_item{
+        .product_item--inner{
+          margin-bottom: 40px;
+        }
+        .product_item--info{
+          padding-left: 20px;
+        }
+        .product_item--title {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+        .price {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  /**
+  * Single Product
+  */
+  .la-p-single-3 .product-main-image {
+    margin-bottom: 10px;
+  }
+  .product--summary{
+    .entry-summary > .cart{
+      margin-top: 0;
+    }
+    .social--sharing,
+    .product_meta {
+      margin-top: 15px;
+    }
+    .woocommerce-product-details__short-description {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  .wc-tabs{
+    margin: 5% 0;
+  }
+
+  .cart-flyout{
+    padding: 30px;
+    .cart-flyout__heading{
+      margin-bottom: 30px;
+    }
+  }
+
+}
+
+
+/* Small devices (tablets, 768px only) */
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+
+}

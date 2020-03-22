@@ -1,0 +1,117 @@
+.page-title-voff .section-page-header,
+.page-title-vhide .section-page-header {
+  display: none;
+}
+
+
+body.raz-body.error404{
+  #lastudio-header-builder{
+    display: none;
+  }
+  .customerdefine-404-content{
+    min-width: 100%;
+  }
+  .default-404-content{
+    text-align: left;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    background: url(assets/images/bg-404.jpg) no-repeat center right;
+    background-size: 460px auto;
+    > div{
+      width: 690px;
+      max-width: 100%;
+    }
+    /*&:before{
+      position: absolute;
+      background: url(assets/images/bg-404.jpg) no-repeat center center;
+      background-size: 460px auto;
+      width: 460px;
+      height: 460px;
+      content: "";
+      border-radius: 50%;
+      right: 0;
+    }*/
+    h1{
+      font-size: 86px;
+      line-height: 1;
+      margin: 0 0 5px;
+
+    }
+    h4{
+      font-weight: 700;
+      font-size: 46px;
+    }
+    h5{
+      font-weight: normal;
+      font-size: 16px;
+      color: #4D4D4D;
+      line-height: 2.3;
+    }
+    p{
+      &.btn-wrapper {
+        margin-top: 40px;
+        a{
+          text-transform: uppercase;
+          font-size: 16px;
+          font-weight: bold;
+          @extend %text-color-heading;
+          position: relative;
+          padding-left: 140px;
+          &:before{
+            position: absolute;
+            width: 120px;
+            height: 2px;
+            content: "";
+            z-index: 1;
+            left: 0;
+            top: 0.5em;
+            background: #1a1a1a;
+
+          }
+          &:hover{
+            @extend %text-color-primary;
+          }
+        }
+
+      }
+    }
+  }
+
+  .site-main{
+    padding: 0;
+    .page-content{
+      min-height: 70vh;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  body.raz-body.error404 .default-404-content{
+    background: none;
+  }
+}
+
+@media (max-width: 767px) {
+  body.raz-body.error404 .default-404-content{
+    text-align: center;
+  }
+  body.raz-body.error404 .default-404-content h4{
+    font-size: 26px;
+  }
+  body.raz-body.error404 .default-404-content h5{
+    font-size: 14px;
+  }
+  body.raz-body.error404 .default-404-content p.btn-wrapper a{
+    padding: 0;
+    &:before{
+      display: none;
+    }
+  }
+}

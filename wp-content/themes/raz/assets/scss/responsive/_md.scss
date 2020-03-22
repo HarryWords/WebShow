@@ -1,0 +1,116 @@
+/* Medium devices (old desktop, less than 1199px) */
+
+@media (max-width: $screen-md-max ){
+
+  h1,
+  .h1 {
+    font-size: 30px ;
+  }
+
+  h2,
+  .h2 {
+    font-size: 24px;
+  }
+
+  h3,
+  .h3 {
+    font-size: 20px;
+  }
+
+  h4,
+  .h4 {
+    font-size: 18px;
+  }
+
+  h5,
+  .h5 {
+    font-size: 16px;
+  }
+
+  h6,
+  .h6 {
+    font-size: 16px;
+  }
+  .la-sharing-single-posts {
+    float: left;
+    margin-bottom: 50px;
+    top: 0;
+    margin-top: 20px;
+  }
+  .la-sharing-single-posts > span {
+    margin-right: 10px;
+    position: relative !important;
+    top: 0 !important;
+  }
+  .home-page-02,
+  .home-page-05{
+    &.enable-header-transparency #lastudio-header-builder {
+      position: relative;
+    }
+  }
+  .backtotop-container{
+    .btn-backtotop{
+      bottom: 80px;
+    }
+    &.show{
+      .btn-backtotop{
+        right: 30px;
+      }
+    }
+  }
+  .lastudio-banner.lastudio-effect-custom-3 .lastudio-banner__content-wrap,
+  .lastudio-banner.lastudio-effect-custom-2 .lastudio-banner__content-wrap,
+  .lastudio-banner.lastudio-effect-custom-1 .lastudio-banner__content-wrap{
+    left: 40px;
+  }
+  .page-title-v1 .use-custom-text .page-title {
+    &:after {
+      margin: 15px auto;
+    }
+  }
+  .enable-header-transparency #lastudio-header-builder {
+    position: relative;
+
+  }
+  .custom-product-wrap .block_heading--title span {
+    font-size: 32px;
+  }
+  .products-list-mini{
+    .product_item{
+      .product_item--inner{
+        margin-bottom: 40px;
+      }
+      .product_item--thumbnail{
+        width: 80px;
+        margin-right: 20px;
+      }
+      .product_item--title{
+        margin-bottom: 5px;
+      }
+      .product_item--info-action{
+        .button{
+          padding: 5px 15px;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .products-grid{
+    .product_item{
+      .quickview{
+        display: none;
+      }
+    }
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+
+}
+
+/* Medium devices (desktops, 992px only) */
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+
+}

@@ -1,0 +1,288 @@
+
+.commentlist{
+  margin: 0 0 40px;
+  list-style: none;
+  padding: 0;
+  border: 1px solid rgba(#000, 0.1);
+  li{
+    padding: 0 50px;
+  }
+  .star-rating{
+    float: right;
+  }
+  li.depth-1.thread-odd {
+    border-top: 1px solid rgba(#000, 0.1);
+    border-bottom: 1px solid rgba(#000, 0.1);
+  }
+  .description {
+    font-size: 16px;
+    color: #535353;
+    font-family: $four-font-family;
+  }
+  .comment-meta{
+    padding-top: 10px;
+    font-size: 12px;
+    .comment-author{
+      display: inline-block;
+      vertical-align: middle;
+      font-weight: 400;
+
+      color: #989898;
+    }
+    .edit-link{
+      display: none;
+    }
+    time{
+      display: inline-block;
+      color: #8d8d8d;
+      vertical-align: middle;
+      &:before{
+        content: "-";
+        padding: 0 5px;
+      }
+    }
+    .comment-reply-link{
+      color: #262626;
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+  }
+  .comment_container{
+    padding: 50px 0;
+    @include clearfix;
+  }
+  ul.children{
+    margin-left: 80px;
+    padding-left: 0;
+    list-style: none;
+  }
+  .comment-respond{
+    margin: 30px 0 0;
+    padding: 0;
+  }
+  img.avatar {
+    width: 95px;
+    height: 95px;
+    margin-right: 50px;
+    border-radius: 50%;
+  }
+  .comment-text {
+    float: right;
+    width: 80%;
+    width: calc(100% - 145px);
+  }
+  .depth-2 {
+    position: relative;
+  }
+
+  .depth-2:before {
+    position: absolute;
+    top: 0;
+    content: "";
+    left: 0;
+    width: 10px;
+    height: 1px;
+    @extend %background-color-primary;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+.comment-respond{
+  @extend %clearfix;
+}
+
+
+p.comment-notes {
+  font-size: 12px !important;
+  margin-bottom: 50px;
+}
+.comment-form p.logged-in-as {
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.comment-form{
+  label{
+    display: block;
+    padding-bottom: 5px;
+  }
+  .comment-form-rating{
+    label{
+      display: none;
+    }
+  }
+  input{
+    &:not([type="checkbox"]){
+      &:not([type="radio"]){
+        &:not([type="submit"]){
+          width: 100%;
+          max-width: 100%;
+          -webkit-appearance: none;
+        }
+      }
+    }
+  }
+  .comment-form-cookies-consent{
+    label{
+      display: inline-block;
+      padding: 0 5px;
+    }
+  }
+  textarea{
+    width: 100%;
+    height: 150px;
+    max-width: 100%;
+    vertical-align: top;
+    -webkit-appearance: none;
+  }
+  .form-submit{
+    padding-top: 10px;
+    input{
+      padding: 10px 35px;
+      line-height: 30px;
+      color: #fff;
+      border-width: 0;
+      font-weight: 500;
+      display: inline-block;
+      width: auto;
+      font-size: 12px;
+      @extend %background-color-secondary;
+
+      &:hover{
+        color: #fff !important;
+        @extend %background-color-primary;
+      }
+    }
+  }
+}
+
+.comments-container{
+  .comments-title{
+    margin-bottom: 30px;
+    display: block;
+    padding-top: 0px;
+  }
+}
+
+.comment_container + .comment-respond{
+  .comment-reply-title{
+    a{
+      text-transform: none;
+      font-weight: normal;
+      letter-spacing: 0;
+      font-size: 12px;
+    }
+  }
+}
+
+.comments-area .woocommerce-noreviews {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.woocommerce-Reviews {
+  max-width: 100%;
+  margin: 0 auto;
+  .meta{
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  p.comment-notes{
+    font-size: 16px !important;
+  }
+  .comment-form .comment-form-url,
+  .comment-form .comment-form-email,
+  .comment-form .comment-form-author {
+    width: 49%;
+  }
+  p{
+    margin-bottom: 0;
+  }
+  > div{
+    width: 970px;
+    max-width: 100%;
+    margin: 0px auto;
+  }
+
+  .commentlist{
+    border: none;
+    .description{
+      font-family: $body-font-family;
+    }
+    li{
+      padding: 0 80px;
+    }
+    li.depth-1.thread-odd{
+      border-bottom: none;
+    }
+  }
+
+}
+
+.entry-content .woocommerce-Reviews .woocommerce-noreviews{
+  margin-bottom: 20px;
+}
+
+.woocommerce-Reviews .woocommerce-Reviews-title,
+.comments-container .comments-title h3,
+.comment-respond .comment-reply-title{
+  font-size: 32px;
+  display: block;
+  font-weight: 400;
+  @extend %text-color-secondary;
+  margin-bottom: 5px;
+}
+
+.woocommerce-Reviews .woocommerce-Reviews-title,
+.woocommerce-Reviews .comment-reply-title{
+  text-transform: none;
+}
+.woocommerce-Reviews .woocommerce-Reviews-title {
+  margin-bottom: 30px;
+}
+
+.comment-form{
+  .comment-form-url,
+  .comment-form-email,
+  .comment-form-author{
+    width: 32%;
+    float: left;
+    margin-left: 2%;
+  }
+  .comment-form-author{
+    margin-left: 0;
+  }
+
+  .form-submit{
+    float: left;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px){
+  .comment-form .comment-form-url,
+  .comment-form .comment-form-email,
+  .comment-form .comment-form-author{
+    width: 100%;
+    margin-left: 0;
+  }
+  .commentlist img.avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+  }
+  .commentlist .comment-text{
+    width: calc(100% - 55px);
+    width: -webkit-calc(100% - 55px);
+  }
+  .commentlist .comment_container {
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  .commentlist ul.children{
+    margin-left: 20px;
+  }
+  .commentlist .depth-3 .comment-meta time{
+    display: none;
+  }
+}

@@ -1,0 +1,138 @@
+.la-contact-info{
+  .la-contact-item{
+    padding-#{$global-left}: 35px;
+    position: relative;
+    margin-bottom: 20px;
+    &:before{
+      font-family: FontAwesome;
+      position: absolute;
+      #{$global-left}: 0;
+      font-size: 1.15em;
+      top: -0.1em;
+    }
+  }
+  .la-contact-phone{
+    &:before{
+      content: "\f095";
+    }
+  }
+  .la-contact-email{
+    &:before{
+      content: "\f0e0";
+    }
+  }
+  .la-contact-address{
+    &:before{
+      content: "\f041";
+    }
+  }
+  .la-contact-working-hours{
+    &:before{
+      content: "\f017";
+    }
+  }
+}
+.inline-item{
+  .la-contact-item{
+    padding-left: 1.8em;
+    display: inline-block;
+    margin: 0 10px 0;
+    &:first-child{
+      margin-left: 0;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+div.wpcf7 .ajax-loader:not(.is-active) {
+  display: none;
+}
+
+.wpcf7-form p {
+  margin-bottom: 0;
+}
+
+.wpcf7 .wpcf7-response-output {
+  font-size: 12px;
+  margin: 0;
+}
+.wpcf7-form-control-wrap{
+  &,
+  .wpcf7-form-control{
+    display: block;
+    width: 100%;
+  }
+  .wpcf7-not-valid-tip{
+    font-size: 12px;
+  }
+  .wpcf7-select,
+  .wpcf7-text,
+  .wpcf7-textarea{
+    padding: 16px 0px;
+    margin-bottom: 30px;
+    border-width: 0 0 2px;
+    font-size: 18px;
+    color: #1a1a1a;
+    font-weight: 400;
+
+    @include placeholder {
+      font-size: 18px;
+      color: #1a1a1a;
+      font-weight: 400;
+    }
+  }
+  .wpcf7-select{
+    height: 56px;
+    padding-right: 10px;
+    background-image: url(assets/images/arrows-bottom.png);
+  }
+  .wpcf7-textarea{
+    max-height: 160px;
+  }
+}
+
+
+.wpcf7-form .contact-form label {
+  padding-bottom: 10px;
+  display: block;
+
+}
+.wpcf7-submit{
+  background-color: #1A1A1A;
+  color: #fff;
+  border: none;
+  padding: 28px 40px;
+  width: 100%;
+  font-weight: 700;
+  margin-top: 20px;
+  &:hover{
+    @extend %background-color-primary;
+  }
+}
+
+.wpcf7-form br {
+  display: none;
+}
+
+
+@media (max-width: 1280px) {
+  .wpcf7-form-control-wrap{
+    &,
+    .wpcf7-select,
+    .wpcf7-text,
+    .wpcf7-textarea{
+      font-size: 14px;
+      border-width: 0 0 1px;
+      margin-bottom: 15px;
+      @include placeholder {
+        font-size: 14px;
+      }
+    }
+  }
+  .wpcf7-submit{
+    padding: 20px 40px;
+  }
+
+}

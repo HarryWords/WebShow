@@ -1,0 +1,368 @@
+[class*="lastudioicon-"] {
+    display: inline-block;
+    font: normal normal normal 1em/1 'LaStudioIcons';
+    speak: none;
+    text-transform: none;
+    /* Better Font Rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.lastudioicon-ic_mail_outline_24px::before {
+    content: "\ea02";
+}
+
+.lastudioicon-ic_compare_arrows_24px::before {
+    content: "\ea03";
+}
+
+.lastudioicon-ic_compare_24px::before {
+    content: "\ea04";
+}
+
+.lastudioicon-ic_share_24px::before {
+    content: "\ea05";
+}
+
+.lastudioicon-bath-tub-1::before {
+    content: "\ea06";
+}
+
+.lastudioicon-shopping-cart-1::before {
+    content: "\ea07";
+}
+
+.lastudioicon-contrast::before {
+    content: "\ea08";
+}
+
+.lastudioicon-heart-1::before {
+    content: "\ea09";
+}
+
+.lastudioicon-sort-tool::before {
+    content: "\ea0a";
+}
+
+.lastudioicon-list-bullet-1::before {
+    content: "\ea0b";
+}
+
+.lastudioicon-menu-8-1::before {
+    content: "\ea0c";
+}
+
+.lastudioicon-menu-4-1::before {
+    content: "\ea0d";
+}
+
+.lastudioicon-menu-3-1::before {
+    content: "\ea0e";
+}
+
+.lastudioicon-menu-1::before {
+    content: "\ea0f";
+}
+
+.lastudioicon-down-arrow::before {
+    content: "\ea10";
+}
+
+.lastudioicon-left-arrow::before {
+    content: "\ea11";
+}
+
+.lastudioicon-right-arrow::before {
+    content: "\ea12";
+}
+
+.lastudioicon-up-arrow::before {
+    content: "\ea13";
+}
+
+.lastudioicon-phone-1::before {
+    content: "\ea14";
+}
+
+.lastudioicon-pin-3-1::before {
+    content: "\ea15";
+}
+
+.lastudioicon-search-content::before {
+    content: "\ea16";
+}
+
+.lastudioicon-single-01-1::before {
+    content: "\ea17";
+}
+
+.lastudioicon-i-delete::before {
+    content: "\ea18";
+}
+
+.lastudioicon-zoom-1::before {
+    content: "\ea19";
+}
+
+.lastudioicon-b-meeting::before {
+    content: "\ea1a";
+}
+
+.lastudioicon-bag-20::before {
+    content: "\ea1b";
+}
+
+.lastudioicon-bath-tub-2::before {
+    content: "\ea1c";
+}
+
+.lastudioicon-web-link::before {
+    content: "\ea1d";
+}
+
+.lastudioicon-shopping-cart-2::before {
+    content: "\ea1e";
+}
+
+.lastudioicon-cart-return::before {
+    content: "\ea1f";
+}
+
+.lastudioicon-check::before {
+    content: "\ea20";
+}
+
+.lastudioicon-g-check::before {
+    content: "\ea21";
+}
+
+.lastudioicon-d-check::before {
+    content: "\ea22";
+}
+
+.lastudioicon-circle-10::before {
+    content: "\ea23";
+}
+
+.lastudioicon-circle-simple-left::before {
+    content: "\ea24";
+}
+
+.lastudioicon-circle-simple-right::before {
+    content: "\ea25";
+}
+
+.lastudioicon-compare::before {
+    content: "\ea26";
+}
+
+.lastudioicon-letter::before {
+    content: "\ea27";
+}
+
+.lastudioicon-mail::before {
+    content: "\ea28";
+}
+
+.lastudioicon-email::before {
+    content: "\ea29";
+}
+
+.lastudioicon-eye::before {
+    content: "\ea2a";
+}
+
+.lastudioicon-heart-2::before {
+    content: "\ea2b";
+}
+
+.lastudioicon-shopping-cart-3::before {
+    content: "\ea2c";
+}
+
+.lastudioicon-list-bullet-2::before {
+    content: "\ea2d";
+}
+
+.lastudioicon-marker-3::before {
+    content: "\ea2e";
+}
+
+.lastudioicon-measure-17::before {
+    content: "\ea2f";
+}
+
+.lastudioicon-menu-8-2::before {
+    content: "\ea30";
+}
+
+.lastudioicon-menu-7::before {
+    content: "\ea31";
+}
+
+.lastudioicon-menu-4-2::before {
+    content: "\ea32";
+}
+
+.lastudioicon-menu-3-2::before {
+    content: "\ea33";
+}
+
+.lastudioicon-menu-2::before {
+    content: "\ea34";
+}
+
+.lastudioicon-microsoft::before {
+    content: "\ea35";
+}
+
+.lastudioicon-phone-2::before {
+    content: "\ea36";
+}
+
+.lastudioicon-phone-call-1::before {
+    content: "\ea37";
+}
+
+.lastudioicon-pin-3-2::before {
+    content: "\ea38";
+}
+
+.lastudioicon-pin-check::before {
+    content: "\ea39";
+}
+
+.lastudioicon-e-remove::before {
+    content: "\ea3a";
+}
+
+.lastudioicon-single-01-2::before {
+    content: "\ea3b";
+}
+
+.lastudioicon-i-add::before {
+    content: "\ea3c";
+}
+
+.lastudioicon-small-triangle-down::before {
+    content: "\ea3d";
+}
+
+.lastudioicon-small-triangle-left::before {
+    content: "\ea3e";
+}
+
+.lastudioicon-small-triangle-right::before {
+    content: "\ea3f";
+}
+
+.lastudioicon-tag-check::before {
+    content: "\ea40";
+}
+
+.lastudioicon-tag::before {
+    content: "\ea41";
+}
+
+.lastudioicon-clock::before {
+    content: "\ea42";
+}
+
+.lastudioicon-time-clock::before {
+    content: "\ea43";
+}
+
+.lastudioicon-triangle-left::before {
+    content: "\ea44";
+}
+
+.lastudioicon-triangle-right::before {
+    content: "\ea45";
+}
+
+.lastudioicon-business-agent::before {
+    content: "\ea46";
+}
+
+.lastudioicon-zoom-2::before {
+    content: "\ea47";
+}
+
+.lastudioicon-zoom-88::before {
+    content: "\ea48";
+}
+
+.lastudioicon-search-zoom-in::before {
+    content: "\ea49";
+}
+
+.lastudioicon-search-zoom-out::before {
+    content: "\ea4a";
+}
+
+.lastudioicon-small-triangle-up::before {
+    content: "\ea4b";
+}
+
+.lastudioicon-phone-call-2::before {
+    content: "\ea4c";
+}
+
+.lastudioicon-full-screen::before {
+    content: "\ea4d";
+}
+
+.lastudioicon-car-parking::before {
+    content: "\ea4e";
+}
+
+.lastudioicon-transparent::before {
+    content: "\ea4f";
+}
+
+.lastudioicon-bedroom-1::before {
+    content: "\ea50";
+}
+
+.lastudioicon-bedroom-2::before {
+    content: "\ea51";
+}
+
+.lastudioicon-search-property::before {
+    content: "\ea52";
+}
+
+.lastudioicon-menu-5::before {
+    content: "\ea53";
+}
+
+.lastudioicon-circle-simple-right-2::before {
+    content: "\ea54";
+}
+.lastudioicon-detached-property::before {
+    content: "\ea55";
+}
+
+.lastudioicon-armchair::before {
+    content: "\ea56";
+}
+
+.lastudioicon-measure-big::before {
+    content: "\ea57";
+}
+
+.lastudioicon-b-meeting-2::before {
+    content: "\ea58";
+}
+
+.lastudioicon-bulb-63::before {
+    content: "\ea59";
+}
+
+.lastudioicon-new-construction::before {
+    content: "\ea5a";
+}
+
+.lastudioicon-quite-happy::before {
+    content: "\ea5b";
+}
