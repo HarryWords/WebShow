@@ -147,20 +147,5 @@ remove_action( 'load-update-core.php', 'wp_update_themes' );
 
 // 
 
-
-function hc_cdn_callback($buffer) {
-    return str_replace('cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.css', 'cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.css', $buffer);//主要是修改这行
-}
-function hc_buffer_start() {
-    ob_start("hc_cdn_callback");
-}
-function izt_buffer_end() {
-    ob_end_flush();
-}
-add_action('init', 'hc_buffer_start');
-add_action('shutdown', 'hc_buffer_end');
-
-
-
 // --------------------------------baseboot------------------------
 
