@@ -1,4 +1,6 @@
 <?php
+
+
 //屏蔽gravatar,调用多说缓存图片
 function duoshuo_avatar($avatar) {
 $avatar = str_replace(array("www.gravatar.com","0.gravatar.com","1.gravatar.com","2.gravatar.com"),"gravatar.duoshuo.com",$avatar);
@@ -31,7 +33,7 @@ if( !function_exists('raz_child_enqueue_styles') ) {
             array( 'raz-theme' ),
             wp_get_theme()->get('Version')
         );
-
+        wp_enqueue_style( 'my-style', get_stylesheet_directory_uri() . '/index.css', false, '1.0', 'all' );
     }
 }
 
@@ -145,7 +147,109 @@ remove_action( 'load-themes.php', 'wp_update_themes' );     // 移除后台主�
 remove_action( 'load-update.php', 'wp_update_themes' );
 remove_action( 'load-update-core.php', 'wp_update_themes' );
 
+// disable  discuss
+// function filter_media_comment_status( $open, $post_id ) {
+//     $post = get_post( $post_id );
+//     if( $post->post_type == 'attachment' ) {
+//         return false;
+//     }
+//     return $open;
+// }
+// add_filter( 'comments_open', 'filter_media_comment_status', 10 , 2 );
+
+
+//移除后台帮助
+function remove_screen_options(){ return false;}
+    add_filter('screen_options_show_screen', 'remove_screen_options');
+    add_filter( 'contextual_help', 'wpse50723_remove_help', 999, 3 );
+    function wpse50723_remove_help($old_help, $screen_id, $screen){
+    $screen->remove_help_tabs();
+    return $old_help;
+}
+//删除wordpress后台仪表盘模块
+function example_remove_dashboard_widgets() {
+// Globalize the metaboxes array, this holds all the widgets for wp-admin
+global $wp_meta_boxes;
+// 以下这一行代码将删除 "快速发布" 模块
+unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_quick_press']);
+// 以下这一行代码将删除 "引入链接" 模块
+unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_incoming_links']);
+// 以下这一行代码将删除 "插件" 模块
+unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_plugins']);
+// 以下这一行代码将删除 "近期评论" 模块
+unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_recent_comments']);
+// 以下这一行代码将删除 "近期草稿" 模块
+unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_recent_drafts']);
+// 以下这一行代码将删除 "WordPress 开发日志" 模块
+unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']);
+// 以下这一行代码将删除 "其它 WordPress 新闻" 模块
+unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);
+// 以下这一行代码将删除 "概况" 模块
+unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_right_now']);
+}
+add_action('wp_dashboard_setup', 'example_remove_dashboard_widgets' );
+remove_action('welcome_panel', 'wp_welcome_panel');
+function remove_dashboard_meta() {
+remove_meta_box( 'dashboard_activity', 'dashboard', 'normal');//3.8版开始
+}
+add_action( 'admin_init', 'remove_dashboard_meta' );
+
+//移除后台外观-编辑，防止用户编辑导致错误
+// function remove_submenu() {
+// remove_submenu_page( 'themes.php', 'theme-editor.php' );
+// }
+// if ( is_admin() ) {
+// add_action('admin_init','remove_submenu');
+// }
+
+
+
+//禁用页面的评论功能
+function disable_page_comments( $posts ) {
+    if ( is_page()) {
+    $posts[0]->comment_status = 'disabled';
+    $posts[0]->ping_status = 'disabled';
+}
+return $posts;
+}
+add_filter( 'the_posts', 'disable_page_comments' );
 // 
 
 // --------------------------------baseboot------------------------
 
+// --------------------------------上线后使用------------------------
+// function remove_menus() {
+//     global $menu;
+//     $restricted = array(
+//         __('Dashboard'),
+//         __('Posts'),
+//         __('Media'),
+//         __('Links'),
+//         __('Pages'),
+//         __('Appearance'),
+//         __('Tools'),
+//         __('Users'),
+//         __('Settings'),
+//         __('Comments'),
+//         __('Plugins')
+//     );
+//     end ($menu);
+//     while (prev($menu)){
+//         $value = explode(' ',$menu[key($menu)][0]);
+//         if(strpos($value[0], '<') === FALSE) {
+//             if(in_array($value[0] != NULL ? $value[0]:"" , $restricted)){
+//                 unset($menu[key($menu)]);
+//             }
+//         }else {
+//         $value2 = explode('<', $value[0]);
+//             if(in_array($value2[0] != NULL ? $value2[0]:"" , $restricted)){
+//                 unset($menu[key($menu)]);
+//             }
+//         }
+//     }
+// }
+// if (is_admin()){
+//     // 屏蔽左侧菜单
+//     add_action('admin_menu', 'remove_menus');
+// }
+// --------------------------------上线后使用------------------------

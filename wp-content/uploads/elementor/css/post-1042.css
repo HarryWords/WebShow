@@ -1,0 +1,57 @@
+.elementor-1042 .elementor-element.elementor-element-398e04c > .elementor-element-populated{padding:0px 0px 0px 0px;}.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-carousel.elementor-slick-slider .lastudio-carousel__item{padding:0px 0px 0px 0px;}.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-carousel.elementor-slick-slider{margin-right:-0px;margin-left:-0px;}.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-banner__overlay{opacity:0;}.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-banner:hover .lastudio-banner__overlay{opacity:0.4;}.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-carousel__content .lastudio-carousel__item-title{color:#ffffff;margin:0px 0px 20px 0px;}.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-banner__title{color:#ffffff;margin:0px 0px 20px 0px;}.elementor-1042 .elementor-element.elementor-element-21a5532  .lastudio-carousel__content .lastudio-carousel__item-title, .elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-banner__title{font-size:56px;font-weight:normal;letter-spacing:2px;}.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-carousel__content .lastudio-carousel__item-text{color:rgba(255,255,255,0.8);margin:0px 0px 30px 0px;}.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-banner__text{color:rgba(255,255,255,0.8);margin:0px 0px 30px 0px;}.elementor-1042 .elementor-element.elementor-element-21a5532  .lastudio-carousel__content .lastudio-carousel__item-text, .elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-banner__text{font-size:18px;font-weight:normal;line-height:37px;}.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-carousel .lastudio-arrow{background-color:#ffffff;color:#1a1a1a;font-size:46px;width:80px;height:80px;border-radius:0px 0px 0px 0px;}.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-carousel .lastudio-arrow:before{font-size:46px;}.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-carousel .lastudio-arrow:hover{background-color:#1a1a1a;color:#ffffff;}.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-carousel .lastudio-arrow.prev-arrow{left:30px;right:auto;}.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-carousel .lastudio-arrow.next-arrow{right:30px;left:auto;}.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-carousel .lastudio-slick-dots li span{background-color:#ffffff;width:14px;height:14px;border-radius:50px 50px 50px 50px;}.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-carousel .lastudio-slick-dots li span:hover{background-color:#fc4f4f;}.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-carousel .lastudio-slick-dots li.slick-active span{background-color:#fc4f4f;}.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-carousel .lastudio-slick-dots li{padding-left:5px;padding-right:5px;}.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-carousel .lastudio-slick-dots{margin:-50px 0px 0px 0px;justify-content:center;}@media(max-width:1699px){.elementor-1042 .elementor-element.elementor-element-21a5532  .lastudio-carousel__content .lastudio-carousel__item-title, .elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-banner__title{font-size:36px;}.elementor-1042 .elementor-element.elementor-element-21a5532  .lastudio-carousel__content .lastudio-carousel__item-text, .elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-banner__text{font-size:16px;}}@media(max-width:1024px){.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-carousel .lastudio-arrow{font-size:26px;width:40px;height:40px;}.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-carousel .lastudio-arrow:before{font-size:26px;}}@media(max-width:767px){.elementor-1042 .elementor-element.elementor-element-21a5532  .lastudio-carousel__content .lastudio-carousel__item-title, .elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-banner__title{font-size:32px;line-height:1.4em;}.elementor-1042 .elementor-element.elementor-element-21a5532  .lastudio-carousel__content .lastudio-carousel__item-text, .elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-banner__text{font-size:14px;line-height:1.8em;}}/* Start custom CSS for lastudio-advanced-carousel, class: .elementor-element-21a5532 */.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-banner__content-wrap {
+    text-align: left;
+    padding: 50px;
+    left: 0;
+    bottom: 0;
+    transform: translateY(20%);
+    max-width: 530px;
+    z-index: 3;
+}
+.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-banner:hover .lastudio-banner__content-wrap {
+    top: auto;
+    transform: translateY(0%);
+}
+
+.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-banner .lastudio-banner__button {
+    border: 2px solid rgba(225,225,225,0.3);
+    background: none;
+    border-radius: 0;
+    width: 210px;
+    height: 70px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-banner .lastudio-banner__button:hover {
+    background: #1A1A1A;
+    border-color: #1A1A1A;
+}
+
+.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-carousel i.arrows-1_tail-triangle-left:before{
+        content: "\eac3" !important;
+}
+.elementor-1042 .elementor-element.elementor-element-21a5532 i.arrows-1_tail-triangle-right:before{
+        content: "\eac4" !important;
+}
+
+@media (min-width: 1366px){
+    .elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-slick-dots{
+        display: none !important;
+    }
+}
+@media (max-width: 1365px){
+    .elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-carousel .lastudio-arrow{
+        display: none !important;
+    }
+}
+@media (max-width: 767px){
+    .elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-banner .lastudio-banner__button {
+    border: 1px solid rgba(225,225,225,0.3);
+    width: 190px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.elementor-1042 .elementor-element.elementor-element-21a5532 .lastudio-banner:hover .lastudio-banner__content-wrap {
+    transform: translateY(-10%);
+}
+}/* End custom CSS */

@@ -1,0 +1,11 @@
+2020-03-22T09:00:51+00:00 CRITICAL /Users/harrywu/work/6-Pro-dev/6048-likun/6048-a_Web/wp-content/plugins/elementor/elementor.php 中第 68 行的 Cannot redeclare elementor_load_plugin_textdomain() (previously declared in /Users/harrywu/work/6-Pro-dev/6048-likun/6048-a_Web/wp-content/plugins/elementor---/elementor.php:67)
+
+2020-03-22T10:15:33+00:00 CRITICAL /Users/harrywu/work/6-Pro-dev/6048-likun/6048-a_Web/wp-content/plugins/elementor/includes/template-library/sources/local.php 中第 753 行的 Uncaught Error: Class 'ZipArchive' not found in /Users/harrywu/work/6-Pro-dev/6048-likun/6048-a_Web/wp-content/plugins/elementor/includes/template-library/sources/local.php:753
+Stack trace:
+#0 /Users/harrywu/work/6-Pro-dev/6048-likun/6048-a_Web/wp-content/plugins/elementor/includes/template-library/sources/local.php(1116): Elementor\TemplateLibrary\Source_Local->export_multiple_templates(Array)
+#1 /Users/harrywu/work/6-Pro-dev/6048-likun/6048-a_Web/wp-includes/class-wp-hook.php(288): Elementor\TemplateLibrary\Source_Local->admin_export_multiple_templates('/wp-admin/edit....', 'elementor_expor...', Array)
+#2 /Users/harrywu/work/6-Pro-dev/6048-likun/6048-a_Web/wp-includes/plugin.php(206): WP_Hook->apply_filters('/wp-admin/edit....', Array)
+#3 /Users/harrywu/work/6-Pro-dev/6048-likun/6048-a_Web/wp-admin/edit.php(186): apply_filters('handle_bulk_act...', '/wp-admin/edit....', 'elementor_expor...', Array)
+#4 {main}
+  thrown
+
